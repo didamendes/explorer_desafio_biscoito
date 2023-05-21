@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+.esconder {
+    display: none;
+}
+
+body {
+    background: linear-gradient(45deg, #190361 0%, #BB00FF 100%);
+    font-size: 1.6rem;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.fechado {
+    background: #FFFFFF;
+    width: 42.8rem;
+    height: 42.4rem;
+
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.8);
+    border-radius: .5rem;
+    margin: 23rem auto;
+
+    text-align: center;
+    padding: 4.8rem 6.4rem;
+}
+
+/* Tela1 */
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.9rem;
+    color: #34355B;
+    margin-bottom: 1.4rem;
+}
+
+p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2rem;
+
+    margin-bottom: 2rem;
+}
+
+.tela1 img:hover {
+    animation: tremer 2s alternate infinite ease-in-out;
+}
+
+/* Tela 2 */
+
+.aberto {
+    background: #FFFFFF;
+    width: 42.8rem;
+    height: 56.4rem;
+
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.8);
+    border-radius: .5rem;
+    margin: 23rem auto;
+
+    text-align: center;
+    padding: 4.8rem 6.4rem;
+}
+
+.tela2 p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 2.9rem;
+
+    margin-bottom: 6rem;
+    color: #000000;
+
+    background: #E4EDF1;
+    box-shadow: .2rem 2.rem .2rem rgba(85, 85, 85, 0.5);
+
+    animation: subir 2000ms 300ms backwards;
+}
+
+.tela2 main {
+    height: 56.4rem;
+}
+
+button {
+    width: 17.4rem;
+    height: 5.2rem;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2rem;
+
+    margin: 6rem auto;
+    color: white;
+    border: none;
+
+    background: #FF9500;
+    border-radius: 4px;
+}
+
+@keyframes subir {
+    0% {
+        opacity: 0;
+        transform: translateY(55px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes tremer {
+    0% {margin-left: 0;}
+    25% {margin-left: 7px;}
+    50% {margin-left: 0;}
+    75% {margin-left: -7px;}
+    100% {margin-left: 0;}
+}
